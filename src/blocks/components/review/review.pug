@@ -1,0 +1,16 @@
+mixin review(className, type, productName, description, img, altText, name, company)
+  article.review(class=className)
+    .review__content
+      h3.review__product= type
+      p.review__product-name= productName
+      p.review__decription= description
+      .review__container
+        .review__author
+          .review__img-wrap
+            img(src= img, alt= altText).review__author-photo
+          .review__text-wrap
+            p.review__author-name= name
+            p.review__author-company= company
+        button.review__button Перейти к кейсу
+
+
