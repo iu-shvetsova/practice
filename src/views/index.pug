@@ -5,9 +5,10 @@ block variables
   - const title = "Reviews"
 
 block content
-  include ../blocks/modules/reviews/reviews
+  .wrapper
+    include ../blocks/modules/reviews/reviews
 
 
-//- block scripts
-//- 	script(src="js/main.js")
-//- 	script(src="js/vendor.js")
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")

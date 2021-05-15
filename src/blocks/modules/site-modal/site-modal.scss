@@ -1,0 +1,104 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background-color: #1a3340;
+  padding-bottom: 20px;
+
+  &__btn-close {
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(../img/close-icon-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    transform: translateX(45px);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__footer-question {
+    font-family: BebasNeue, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__footer-description {
+    text-align: center;
+    line-height: 25px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__footer-form {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__footer-input {
+    background-color: transparent;
+    border: 1px solid rgba(244, 244, 244, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px 0 0 3px;
+    color: inherit;
+    width: 270px;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  &__footer-submit {
+    height: 100%;
+    border: none;
+    background-color: #f8cd3e;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    padding: 11px 20px;
+    box-sizing: border-box;
+    border-radius: 0 3px 3px 0;
+    border-width: 1px 1px 1px 0;
+    border-color: #f8cd3e;
+    border-style: solid;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &:hover {
+      background-color: transparent;
+      border-color: rgba(244, 244, 244, 0.2);
+      color: inherit;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0px 1px #fff;
+    }
+  }
+}

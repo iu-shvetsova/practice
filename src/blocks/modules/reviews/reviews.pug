@@ -1,34 +1,133 @@
-include ../../components/review/review
-
-.section
-  h2 Новости
-  article.site-review
-  .site-review__content
-    h3.site-review__product Landing page
-    p.site-review__product-name Интро: порошковая краска
-    p.site-review__decription Мы занимаемся продажей, решили продвигать краску. Товар в довольно большом объеме, поэтому решили, что надо продвигать краску не только в своем регионе, но и по России. Обратился в Yode PRO, мне назначили встречу...
-    video(width="556" height="307" controls="controls").site-review__video
-      source(src="video/test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-    .site-review__link-wrap
-      h4.site-review__link-title вложения
-      ul.site-review__link-list
-        li.site-review__link-item
-          a(href="#").site-review__link
-            div.site-review__link-button
-            p.site-review__link-label Благодарственное письмо
-        li.site-review__link-item
-          a(href="#").site-review__link
-            div.site-review__link-button
-            p.site-review__link-label Отзыв в группе Yode.PRO ВК
-        li.site-review__link-item
-          a(href="#").site-review__link
-            div.site-review__link-button
-            p.site-review__link-label Группа «Марс» ВК
-    .site-review__container
-      .site-review__author
-        .site-review__img-wrap
-          img(src="img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
-        .site-review__text-wrap
-          p.site-review__author-name Максим Титюшкин
-          p.site-review__author-company Ген.директор ООО «ИНТРО»
-      button.site-review__button Перейти к кейсу
+section.reviews
+  p.reviews__slogan ваш фидбэк мотивируют нас
+  h2.reviews__title отзывы
+  ol.reviews__list
+    ul.reviews__sublist
+      li.reviews__item
+        article.site-review
+          .site-review__content
+            h3.site-review__product Landing page
+            p.site-review__product-name Интро: порошковая краска
+            video(width="556" height="307" controls poster="./img/preview-video.png" muted).site-review__video
+              source(src="./video/test.mp4" type='video/mp4;')
+            .site-review__container
+              .site-review__author
+                .site-review__img-wrap
+                  img(src="./img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
+                .site-review__text-wrap
+                  p.site-review__author-name Максим Титюшкин
+                  p.site-review__author-company Ген.директор ООО «ИНТРО»
+              button.site-review__button Перейти к кейсу
+      li.reviews__item
+        article.site-review
+          .site-review__content
+            h3.site-review__product Ведение группы ВК
+            p.site-review__product-name Марс
+            .site-review__decription
+              p Мы&nbsp;занимаемся продажей, решили продвигать краску. Товар в&nbsp;довольно большом объеме, поэтому решили, что надо продвигать краску не&nbsp;только в&nbsp;своем регионе, но&nbsp;и&nbsp;по&nbsp;России.
+              p Обратился в&nbsp;Yode PRO, мне назначили встречу.
+              p Ребята объяснили мне, что для рекламы нужна хорошая посадочная страница, а&nbsp;мой сайт не&nbsp;отвечал многим требованиям. Тогда мне предложили разработку квиз-лендинга. 
+              p В&nbsp;квизе все нужные для меня и&nbsp;клиента вопросы, все интуитивно понятно. Очень доволен работой, настоящие профессионалы, приду к&nbsp;ним за&nbsp;рекламой.
+            video(width="556" height="307" controls poster="./img/preview-video.png" muted).site-review__video
+              source(src="./video/test.mp4" type='video/mp4;')
+            .site-review__container
+              .site-review__author
+                .site-review__img-wrap
+                  img(src="img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
+                .site-review__text-wrap
+                  p.site-review__author-name Максим Титюшкин
+                  p.site-review__author-company Ген.директор ООО «ИНТРО»
+              button.site-review__button Перейти к кейсу
+      li.reviews__item
+        article.site-review
+          .site-review__content
+            h3.site-review__product Программно-аппаратный комплекс
+            p.site-review__product-name Есть Wi-Fi
+            .site-review__decription
+              p Мы&nbsp;занимаемся продажей, решили продвигать краску. Товар в&nbsp;довольно большом объеме, поэтому решили, что надо продвигать краску не&nbsp;только в&nbsp;своем регионе, но&nbsp;и&nbsp;по&nbsp;России.
+              p Обратился в&nbsp;Yode PRO, мне назначили встречу.
+              p Ребята объяснили мне, что для рекламы нужна хорошая посадочная страница, а&nbsp;мой сайт не&nbsp;отвечал многим требованиям. Тогда мне предложили разработку квиз-лендинга. 
+              p В&nbsp;квизе все нужные для меня и&nbsp;клиента вопросы, все интуитивно понятно. Очень доволен работой, настоящие профессионалы, приду к&nbsp;ним за&nbsp;рекламой.
+            .site-review__link-wrap
+              h4.site-review__link-title вложения
+              ul.site-review__link-list
+                li.site-review__link-item
+                  a(href="#").site-review__link Благодарственное письмо
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_arrow Отзыв в группе Yode.PRO ВК
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_vk Группа «Марс» ВК
+            .site-review__container
+              .site-review__author
+                .site-review__img-wrap
+                  img(src="img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
+                .site-review__text-wrap
+                  p.site-review__author-name Максим Титюшкин
+                  p.site-review__author-company Ген.директор ООО «ИНТРО»
+              button.site-review__button Перейти к кейсу
+    ul.reviews__sublist
+      li.reviews__item
+        article.site-review
+          .site-review__content
+            h3.site-review__product интернет-магазин
+            p.site-review__product-name Хайп: фитнес-браслеты
+            .site-review__decription
+              p Мы&nbsp;занимаемся продажей, решили продвигать краску. Товар в&nbsp;довольно большом объеме, поэтому решили, что надо продвигать краску не&nbsp;только в&nbsp;своем регионе, но&nbsp;и&nbsp;по&nbsp;России.
+              p Обратился в&nbsp;Yode PRO, мне назначили встречу.
+              p Ребята объяснили мне, что для рекламы нужна хорошая посадочная страница, а&nbsp;мой сайт не&nbsp;отвечал многим требованиям. Тогда мне предложили разработку квиз-лендинга. 
+              p В&nbsp;квизе все нужные для меня и&nbsp;клиента вопросы, все интуитивно понятно. Очень доволен работой, настоящие профессионалы, приду к&nbsp;ним за&nbsp;рекламой.
+            .site-review__link-wrap
+              h4.site-review__link-title вложения
+              ul.site-review__link-list
+                li.site-review__link-item
+                  a(href="#").site-review__link Благодарственное письмо
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_arrow Отзыв в группе Yode.PRO ВК
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_vk Группа «Марс» ВК
+            .site-review__container
+              .site-review__author
+                .site-review__img-wrap
+                  img(src="img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
+                .site-review__text-wrap
+                  p.site-review__author-name Максим Титюшкин
+                  p.site-review__author-company Ген.директор ООО «ИНТРО»
+              button.site-review__button Перейти к кейсу
+      li.reviews__item
+        article.site-review
+          .site-review__content
+            h3.site-review__product Ведение группы ВК
+            p.site-review__product-name Марс
+            .site-review__decription
+              p Мы&nbsp;занимаемся продажей, решили продвигать краску. Товар в&nbsp;довольно большом объеме, поэтому решили, что надо продвигать краску не&nbsp;только в&nbsp;своем регионе, но&nbsp;и&nbsp;по&nbsp;России.
+              p Обратился в&nbsp;Yode PRO, мне назначили встречу.
+              p Ребята объяснили мне, что для рекламы нужна хорошая посадочная страница, а&nbsp;мой сайт не&nbsp;отвечал многим требованиям. Тогда мне предложили разработку квиз-лендинга. 
+              p В&nbsp;квизе все нужные для меня и&nbsp;клиента вопросы, все интуитивно понятно. Очень доволен работой, настоящие профессионалы, приду к&nbsp;ним за&nbsp;рекламой.
+            video(width="556" height="307" controls poster="./img/preview-video.png" muted).site-review__video
+              source(src="./video/test.mp4" type='video/mp4;')
+            .site-review__link-wrap
+              h4.site-review__link-title вложения
+              ul.site-review__link-list
+                li.site-review__link-item
+                  a(href="#").site-review__link Благодарственное письмо
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_arrow Отзыв в группе Yode.PRO ВК
+                li.site-review__link-item
+                  a(href="#").site-review__link.site-review__link_vk Группа «Марс» ВК
+            .site-review__container
+              .site-review__author
+                .site-review__img-wrap
+                  img(src="img/photo-author.png", alt="Максим Титюшкин").site-review__author-photo
+                .site-review__text-wrap
+                  p.site-review__author-name Максим Титюшкин
+                  p.site-review__author-company Ген.директор ООО «ИНТРО»
+              button.site-review__button Перейти к кейсу
+  .modal.reviews__modal
+    button.modal__btn-close
+      //- content
+    .modal__footer
+      p.modal__footer-question Хотите так же?
+      p.modal__footer-description Оставьте свою почту, и мы свяжемся с вами в течение часа для обсуждения деталей
+      form.modal__footer-form
+        input(type="text" name="application").modal__footer-input
+        input(type="button" value="Отправить").modal__footer-submit
