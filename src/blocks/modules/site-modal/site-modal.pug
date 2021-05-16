@@ -4,6 +4,10 @@
   .modal__footer
     p.modal__footer-question 
     p.modal__footer-description
-    form.modal__footer-form
-      input(type="text" name="application").modal__footer-input
-      input(type="button" value="Отправить").modal__footer-submit
+    form(action="#").modal__footer-form
+      .modal__footer-wrap
+        input(type="text" name="application").modal__footer-input
+        button(type="submit" value="Отправить").modal__footer-submit
+    .site-success
+      .site-success__circle-loader
+        .site-success__checkmark

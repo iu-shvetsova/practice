@@ -1,76 +1,76 @@
 .site-review {
+  background-color: rgba(34, 33, 38, 0.5);
+  max-width: 620px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+
+  @media (max-width: 1300px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 700px) {
+    width: fit-content;
+  }
+
+  @media (max-width: 630px) {
+    max-width: 520px;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 400px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: solid 2px #f8cd3e;
+    border-bottom: solid 2px #f8cd3e;
+    transition: 0.2s;
+    transform: scaleX(0);
+    border-radius: 8px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-left: solid 2px #f8cd3e;
+    border-right: solid 2px #f8cd3e;
+    transition: 0.2s;
+    transform: scaleY(0);
+    border-radius: 8px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: scale(1);
+  }
+
+  &:hover {
+    background-color: #1a3340;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 620px;
     padding: 32px;
-    background-color: rgba(34, 33, 38, 0.5);
-    border-radius: 8px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    position: relative;
-
-    &_opened {
-      background-color: #1a3340;
-
-      &:hover::before,
-      &:hover::after {
-        transform: none;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border-top: solid 2px #f8cd3e;
-      border-bottom: solid 2px #f8cd3e;
-      transition: 0.2s;
-      transform: scaleX(0);
-      border-radius: 8px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border-left: solid 2px #f8cd3e;
-      border-right: solid 2px #f8cd3e;
-      transition: 0.2s;
-      transform: scaleY(0);
-      border-radius: 8px;
-    }
-
-    &:hover::before,
-    &:hover::after {
-      transform: scale(1);
-    }
-
-    &:hover {
-      background-color: #1a3340;
-    }
-
-    @media (max-width: 1300px) {
-      margin: 0 auto;
-    }
-
-    @media (max-width: 700px) {
-      width: fit-content;
-    }
-
-    @media (max-width: 630px) {
-      max-width: 520px;
-    }
 
     @media (max-width: 550px) {
-      max-width: 400px;
       padding: 25px;
     }
   }

@@ -124,10 +124,15 @@ section.reviews
               button.site-review__button Перейти к кейсу
   .modal.reviews__modal
     button.modal__btn-close
-      //- content
-    .modal__footer
-      p.modal__footer-question Хотите так же?
-      p.modal__footer-description Оставьте свою почту, и мы свяжемся с вами в течение часа для обсуждения деталей
-      form.modal__footer-form
-        input(type="text" name="application").modal__footer-input
-        input(type="button" value="Отправить").modal__footer-submit
+    .content-wrap
+      .modal__footer
+        p.modal__footer-question Хотите так же?
+        p.modal__footer-description Оставьте свою почту, и мы свяжемся с вами в течение часа для обсуждения деталей
+        form(action="#").modal__footer-form
+          .modal__footer-wrap
+            input(type="text" name="application").modal__footer-input
+            button(type="submit").modal__footer-submit Отправить
+          .modal__error-message Пожалуйста, введите вашу почту
+        .site-success
+          .site-success__circle-loader
+            .site-success__checkmark
