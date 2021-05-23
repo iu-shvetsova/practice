@@ -131,6 +131,10 @@
       line-height: 21px;
       margin-top: 15px;
     }
+
+    &_opened {
+      max-height: none;
+    }
   }
 
   &__video {
@@ -361,6 +365,10 @@
     @media (max-width: 400px) {
       font-size: 13px;
       line-height: 18px;
+    }
+
+    &_none {
+      display: none;
     }
 
     &:hover {

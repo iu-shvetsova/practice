@@ -13,7 +13,6 @@ $check-left: ($loader-size/6 + $loader-size/12);
   }
 
   &__circle-loader {
-    margin-bottom: calc(100px / 2);
     border: 1px solid rgba(244, 244, 244, 0.2);
     border-left-color: #f8cd3e;
     display: inline-block;

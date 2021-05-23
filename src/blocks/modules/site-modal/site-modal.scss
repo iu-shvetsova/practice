@@ -1,10 +1,12 @@
-.modal {
+.site-modal {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
   background-color: #1a3340;
-  padding-bottom: 20px;
+  max-height: 95vh;
+  width: 750px;
+  border-radius: 8px;
 
   &__btn-close {
     border: none;
@@ -20,8 +22,8 @@
     transition: opacity 0.2s ease;
     position: absolute;
     top: 15px;
-    right: 0;
-    transform: translateX(45px);
+    right: 25px;
+    z-index: 5;
 
     &:hover {
       opacity: 1;
@@ -30,6 +32,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  &__footer {
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   &__footer-question {
@@ -152,4 +159,94 @@
       display: block;
     }
   }
+}
+
+/*
+.custom-scroll
+*/
+
+.custom-scroll > .os-scrollbar {
+  padding: 0;
+}
+.custom-scroll > .os-scrollbar-vertical {
+  bottom: 2px;
+  top: 2px;
+  width: 11px;
+}
+
+.custom-scroll > .os-scrollbar-corner {
+  height: 11px;
+  width: 11px;
+  background-color: transparent;
+}
+.custom-scroll > .os-scrollbar > .os-scrollbar-track {
+  background: #13252d;
+}
+
+.custom-scroll > .os-scrollbar-vertical:hover > .os-scrollbar-track:before,
+.custom-scroll > .os-scrollbar-vertical.active > .os-scrollbar-track:before {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+}
+.custom-scroll > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: transparent;
+}
+
+.custom-scroll
+  > .os-scrollbar-vertical
+  > .os-scrollbar-track
+  > .os-scrollbar-handle {
+  max-height: 120px;
+}
+.custom-scroll
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle:before {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8cd3e;
+  border-radius: 8px;
+}
+.custom-scroll.os-host-scrolling
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle:before {
+  background-color: #64531b;
+}
+.custom-scroll
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle:hover:before,
+.custom-scroll
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle.active:before {
+  background-color: #64531b;
+}
+
+.custom-scroll
+  > .os-scrollbar-vertical
+  > .os-scrollbar-track
+  > .os-scrollbar-handle {
+  width: 100%;
+  min-height: 16px;
+}
+.custom-scroll.os-host-transition
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle:before {
+  transition: background 0.3s;
+}
+.custom-scroll.os-host-transition > .os-scrollbar > .os-scrollbar-track:before {
+  transition: margin 0.3s, height 0.3s, width 0.3s, top 0.3s, right 0.3s,
+    bottom 0.3s, left 0.3s;
 }
